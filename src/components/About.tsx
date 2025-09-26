@@ -13,15 +13,27 @@ export default function About() {
 
   return (
     <section id="about" className="py-24 relative overflow-hidden">
-      {/* Earth from space background - Global connectivity theme */}
+      {/* REAL EARTH/NETWORK IMAGE BACKGROUND */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/30 to-black" />
+        {/* Primary background image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/images/backgrounds/earth-network.jpg)',
+            filter: 'brightness(0.2) contrast(1.1)'
+          }}
+        />
         
-        {/* Earth-inspired radial gradient */}
-        <div className="absolute inset-0 earth-pattern opacity-60" />
+        {/* Secondary overlay image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-40"
+          style={{
+            backgroundImage: 'url(/images/backgrounds/network-connections.jpg)'
+          }}
+        />
         
-        {/* Network connectivity pattern */}
-        <div className="absolute inset-0 network-pattern opacity-50" />
+        {/* Gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-blue-900/50 to-black/80" />
         
         {/* Connection lines */}
         <div className="absolute inset-0 opacity-20">

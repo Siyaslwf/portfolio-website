@@ -34,12 +34,27 @@ export default function Skills() {
 
   return (
     <section id="skills" className="py-24 relative overflow-hidden">
-      {/* Code/Programming background inspired by your coding images */}
+      {/* REAL CODE SCREEN BACKGROUND IMAGE */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/95 to-blue-900/30" />
+        {/* Primary code screen background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/images/backgrounds/code-screen.jpg)',
+            filter: 'brightness(0.15) contrast(1.3) saturate(1.1)'
+          }}
+        />
         
-        {/* Code pattern overlay - more visible */}
-        <div className="absolute inset-0 code-pattern opacity-60" />
+        {/* Secondary programming workspace overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center mix-blend-multiply opacity-50"
+          style={{
+            backgroundImage: 'url(/images/backgrounds/programming-setup.jpg)'
+          }}
+        />
+        
+        {/* Dark gradient for readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-gray-900/70 to-blue-900/60" />
         
         {/* Binary/data visualization effect */}
         <div className="absolute inset-0 opacity-20">

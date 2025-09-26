@@ -87,12 +87,27 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-24 relative overflow-hidden">
-      {/* Workspace/Development environment background inspired by your laptop images */}
+      {/* REAL LAPTOP WORKSPACE BACKGROUND IMAGE */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-800/50 to-gray-900" />
+        {/* Primary workspace background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/images/backgrounds/laptop-workspace.jpg)',
+            filter: 'brightness(0.18) contrast(1.2)'
+          }}
+        />
         
-        {/* Workspace pattern - more visible */}
-        <div className="absolute inset-0 workspace-pattern opacity-70" />
+        {/* Development setup overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center mix-blend-soft-light opacity-30"
+          style={{
+            backgroundImage: 'url(/images/backgrounds/development-setup.jpg)'
+          }}
+        />
+        
+        {/* Dark overlay for content readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-slate-900/60 to-gray-900/80" />
         
         {/* Development environment elements */}
         <div className="absolute inset-0 opacity-15">

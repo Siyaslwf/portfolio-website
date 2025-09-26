@@ -73,12 +73,27 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
-      {/* Business/Professional networking background inspired by your handshake/business images */}
+      {/* REAL BUSINESS/HANDSHAKE BACKGROUND IMAGE */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900/90 to-blue-900/30" />
+        {/* Professional handshake/business background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/images/backgrounds/business-handshake.jpg)',
+            filter: 'brightness(0.2) contrast(1.1) grayscale(0.3)'
+          }}
+        />
         
-        {/* Business networking pattern - more visible */}
-        <div className="absolute inset-0 business-pattern opacity-60" />
+        {/* Data visualization overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center mix-blend-soft-light opacity-25"
+          style={{
+            backgroundImage: 'url(/images/backgrounds/business-data.jpg)'
+          }}
+        />
+        
+        {/* Professional gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-slate-900/70 to-blue-900/60" />
         
         {/* Professional connection visualization */}
         <div className="absolute inset-0 opacity-20">

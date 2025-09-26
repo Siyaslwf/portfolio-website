@@ -13,14 +13,20 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Professional gradient background inspired by your tech images */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/30 to-black" />
+      {/* REAL IMAGE BACKGROUND - Replace this URL with your actual image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/images/backgrounds/tech-workspace.jpg)',
+          filter: 'brightness(0.25) contrast(1.2)'
+        }}
+      />
       
-      {/* Visible tech grid pattern */}
-      <div className="absolute inset-0 code-pattern opacity-40" />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-blue-900/40 to-black/80" />
       
-      {/* Circuit board inspired elements */}
-      <div className="absolute inset-0 circuit-pattern opacity-30" />
+      {/* Optional: Keep some tech patterns as overlay */}
+      <div className="absolute inset-0 code-pattern opacity-20" />
 
       {/* Floating tech particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
