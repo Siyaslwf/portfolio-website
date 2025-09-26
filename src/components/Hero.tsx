@@ -16,22 +16,17 @@ export default function Hero() {
       {/* Professional gradient background inspired by your tech images */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/30 to-black" />
       
-      {/* Subtle tech grid pattern - inspired by your network images */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `
-            linear-gradient(rgba(6, 182, 212, 0.4) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(6, 182, 212, 0.4) 1px, transparent 1px)
-          `,
-          backgroundSize: '80px 80px'
-        }} />
-      </div>
+      {/* Visible tech grid pattern */}
+      <div className="absolute inset-0 code-pattern opacity-40" />
+      
+      {/* Circuit board inspired elements */}
+      <div className="absolute inset-0 circuit-pattern opacity-30" />
 
-      {/* Minimal circuit patterns - inspired by your circuit board images */}
-      <div className="absolute inset-0 opacity-[0.02]">
-        <div className="absolute top-1/4 left-1/4 w-32 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent" />
-        <div className="absolute top-1/2 right-1/4 w-0.5 h-24 bg-gradient-to-b from-transparent via-blue-400 to-transparent" />
-        <div className="absolute bottom-1/3 left-1/3 w-20 h-0.5 bg-gradient-to-r from-transparent via-teal-400 to-transparent" />
+      {/* Floating tech particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 right-20 w-2 h-2 bg-cyan-400/30 rounded-full animate-bounce-slow" />
+        <div className="absolute top-1/2 left-10 w-1.5 h-1.5 bg-blue-400/20 rounded-full animate-bounce-slow" style={{animationDelay: '1.5s'}} />
+        <div className="absolute bottom-32 right-1/3 w-2 h-2 bg-teal-400/25 rounded-full animate-bounce-slow" style={{animationDelay: '0.5s'}} />
       </div>
 
       {/* Main content container */}

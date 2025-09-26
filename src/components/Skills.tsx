@@ -33,15 +33,46 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" className="section-padding">
-      <div className="container mx-auto">
-        {/* LEARNING: Section header */}
+    <section id="skills" className="py-24 relative overflow-hidden">
+      {/* Code/Programming background inspired by your coding images */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/95 to-blue-900/30" />
+        
+        {/* Code pattern overlay - more visible */}
+        <div className="absolute inset-0 code-pattern opacity-60" />
+        
+        {/* Binary/data visualization effect */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-10 text-cyan-400/30 font-mono text-xs">
+            01001000 01100101 01101100 01101100 01101111
+          </div>
+          <div className="absolute top-20 left-10 text-blue-400/20 font-mono text-xs">
+            function createPortfolio() &#123;
+          </div>
+          <div className="absolute bottom-20 right-10 text-teal-400/30 font-mono text-xs">
+            const skills = ['React', 'Node.js'];
+          </div>
+        </div>
+        
+        {/* Syntax highlighting blocks */}
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
+          <div className="w-full h-8 bg-gradient-to-r from-cyan-500/20 to-transparent mt-4" />
+          <div className="w-2/3 h-6 bg-gradient-to-r from-blue-500/15 to-transparent mt-2" />
+          <div className="w-3/4 h-6 bg-gradient-to-r from-purple-500/15 to-transparent mt-2" />
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        {/* Professional Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
-            Skills & Expertise
+          <span className="text-cyan-400/80 text-sm font-light tracking-[0.2em] uppercase mb-4 block">
+            Technical Expertise
+          </span>
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-tight">
+            Skills & Technologies
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Technologies and tools I use to bring ideas to life
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            Crafting digital solutions with cutting-edge technologies and best practices
           </p>
         </div>
 

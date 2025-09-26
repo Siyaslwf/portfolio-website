@@ -12,18 +12,36 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="py-24 bg-gray-900/50">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-24 relative overflow-hidden">
+      {/* Earth from space background - Global connectivity theme */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/30 to-black" />
+        
+        {/* Earth-inspired radial gradient */}
+        <div className="absolute inset-0 earth-pattern opacity-60" />
+        
+        {/* Network connectivity pattern */}
+        <div className="absolute inset-0 network-pattern opacity-50" />
+        
+        {/* Connection lines */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-1/4 left-1/4 w-32 h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent" />
+          <div className="absolute top-1/2 right-1/4 w-0.5 h-24 bg-gradient-to-b from-transparent via-blue-400 to-transparent" />
+          <div className="absolute bottom-1/3 left-1/3 w-20 h-0.5 bg-gradient-to-r from-transparent via-teal-400 to-transparent" />
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         {/* Professional Section header */}
         <div className="text-center mb-20">
           <span className="text-cyan-400/80 text-sm font-light tracking-[0.2em] uppercase mb-4 block">
-            About
+            Global Connectivity
           </span>
           <h2 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-tight">
             About Me
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
-            Passionate developer creating innovative solutions with modern technologies
+            Connecting ideas globally through innovative technology solutions
           </p>
         </div>
 

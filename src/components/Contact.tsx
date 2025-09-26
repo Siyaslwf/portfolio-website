@@ -72,30 +72,49 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden">
-      {/* Global connectivity background */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `
-            radial-gradient(circle at 20% 30%, rgba(6, 182, 212, 0.3) 1px, transparent 1px),
-            radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.3) 1px, transparent 1px),
-            radial-gradient(circle at 50% 20%, rgba(34, 197, 94, 0.3) 1px, transparent 1px)
-          `,
-          backgroundSize: '100px 100px, 150px 150px, 80px 80px'
-        }} />
+    <section id="contact" className="py-24 relative overflow-hidden">
+      {/* Business/Professional networking background inspired by your handshake/business images */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900/90 to-blue-900/30" />
+        
+        {/* Business networking pattern - more visible */}
+        <div className="absolute inset-0 business-pattern opacity-60" />
+        
+        {/* Professional connection visualization */}
+        <div className="absolute inset-0 opacity-20">
+          {/* Connection nodes */}
+          <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-cyan-400/40 rounded-full" />
+          <div className="absolute top-1/4 right-1/4 w-4 h-4 bg-blue-400/40 rounded-full" />
+          <div className="absolute bottom-1/4 left-1/4 w-4 h-4 bg-teal-400/40 rounded-full" />
+          <div className="absolute bottom-1/4 right-1/4 w-4 h-4 bg-green-400/40 rounded-full" />
+          <div className="absolute top-1/2 left-1/2 w-6 h-6 bg-cyan-400/50 rounded-full transform -translate-x-1/2 -translate-y-1/2" />
+          
+          {/* Connection lines */}
+          <div className="absolute top-1/4 left-1/4 w-1/2 h-0.5 bg-gradient-to-r from-cyan-400/30 to-blue-400/30 transform origin-left rotate-12" />
+          <div className="absolute bottom-1/4 left-1/4 w-1/2 h-0.5 bg-gradient-to-r from-teal-400/30 to-green-400/30 transform origin-left -rotate-12" />
+        </div>
+        
+        {/* Business chart elements */}
+        <div className="absolute top-10 right-10 opacity-10">
+          <div className="w-32 h-20 border border-cyan-400/30 rounded">
+            <div className="w-full h-2 bg-gradient-to-r from-cyan-400/20 to-transparent mt-2" />
+            <div className="w-3/4 h-2 bg-gradient-to-r from-blue-400/20 to-transparent mt-1" />
+            <div className="w-5/6 h-2 bg-gradient-to-r from-teal-400/20 to-transparent mt-1" />
+          </div>
+        </div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Professional Section header */}
         <div className="text-center mb-20">
           <span className="text-cyan-400/80 text-sm font-light tracking-[0.2em] uppercase mb-4 block">
-            Connect
+            Professional Network
           </span>
           <h2 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-tight">
-            Get In Touch
+            Let's Connect
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            Ready to work together? Let's discuss your project and bring your ideas to life.
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            Building professional relationships through innovative collaboration and shared success
           </p>
         </div>
 
