@@ -12,14 +12,17 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="section-padding bg-black/20">
-      <div className="container mx-auto">
-        {/* LEARNING: Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
+    <section id="about" className="py-24 bg-gray-900/50">
+      <div className="container mx-auto px-6">
+        {/* Professional Section header */}
+        <div className="text-center mb-20">
+          <span className="text-cyan-400/80 text-sm font-light tracking-[0.2em] uppercase mb-4 block">
+            About
+          </span>
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-tight">
             About Me
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
             Passionate developer creating innovative solutions with modern technologies
           </p>
         </div>
@@ -32,8 +35,8 @@ export default function About() {
               <div className="w-48 h-48 mx-auto bg-gradient-to-br from-blue-400 to-purple-600 rounded-full mb-6 flex items-center justify-center">
                 <span className="text-4xl font-bold text-white">MSC</span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">Mohammed Siyas CK</h3>
-              <p className="text-blue-400">Full Stack Developer</p>
+              <h3 className="text-2xl font-light text-white mb-2">Mohammed Siyas CK</h3>
+              <p className="text-cyan-400 font-light">Full Stack Developer</p>
             </div>
           </div>
 
@@ -45,10 +48,10 @@ export default function About() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`pb-4 px-2 font-medium transition-colors duration-300 ${
+                  className={`pb-4 px-2 font-light transition-colors duration-300 ${
                     activeTab === tab.id
-                      ? 'text-blue-400 border-b-2 border-blue-400'
-                      : 'text-white/70 hover:text-white'
+                      ? 'text-cyan-400 border-b-2 border-cyan-400'
+                      : 'text-gray-400 hover:text-white'
                   }`}
                 >
                   {tab.label}
@@ -60,12 +63,12 @@ export default function About() {
             <div className="animate-fade-in">
               {activeTab === 'about' && (
                 <div className="space-y-6">
-                  <p className="text-white/80 text-lg leading-relaxed">
-                    I'm a passionate full-stack developer with expertise in modern web technologies. 
+                  <p className="text-gray-300 text-lg leading-relaxed font-light">
+                    I'm a passionate full-stack developer with expertise in modern web technologies.
                     I love creating beautiful, functional, and user-friendly applications that solve real-world problems.
                   </p>
-                  <p className="text-white/80 text-lg leading-relaxed">
-                    When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
+                  <p className="text-gray-300 text-lg leading-relaxed font-light">
+                    When I'm not coding, you can find me exploring new technologies, contributing to open-source projects,
                     or sharing knowledge with the developer community.
                   </p>
                   <div className="flex flex-wrap gap-3 mt-6">

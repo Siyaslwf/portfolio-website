@@ -86,15 +86,22 @@ export default function Projects() {
     : projects.filter(project => project.category === activeFilter)
 
   return (
-    <section id="projects" className="section-padding bg-black/20">
-      <div className="container mx-auto">
-        {/* LEARNING: Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
+    <section id="projects" className="py-24 bg-gray-900 relative overflow-hidden">
+      {/* Network-inspired background */}
+      <div className="absolute inset-0 network-pattern opacity-30"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/50 to-gray-900"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        {/* Professional Section header */}
+        <div className="text-center mb-20">
+          <span className="text-cyan-400/80 text-sm font-light tracking-[0.2em] uppercase mb-4 block">
+            Portfolio
+          </span>
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-6 tracking-tight">
             Featured Projects
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            A showcase of my recent work and personal projects
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            Innovative solutions that connect ideas with technology
           </p>
         </div>
 
