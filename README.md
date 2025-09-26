@@ -1,15 +1,20 @@
-# 🚀 Mohammed Siyas CK - Portfolio Website
+# 🚀 Mohammed Siyas CK - Professional Portfolio
 
-A modern, responsive portfolio website built with **Next.js 15** and **Tailwind CSS** to showcase my web development skills and projects.
+[![Live Website](https://img.shields.io/badge/🌐_Live_Website-Visit_Portfolio-00D8FF?style=for-the-badge)](https://siyaslwf.github.io/portfolio-website/)
+[![GitHub Pages](https://img.shields.io/badge/Deployed_on-GitHub_Pages-222222?style=for-the-badge&logo=github)](https://siyaslwf.github.io/portfolio-website/)
+[![Built with Next.js](https://img.shields.io/badge/Built_with-Next.js_15-000000?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Styled with Tailwind](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+
+A cutting-edge, responsive portfolio website showcasing modern web development expertise through **Next.js 15**, **TypeScript**, and **Tailwind CSS**. Features real tech-inspired imagery and professional glassmorphism design.
 
 ## 🌟 Features
 
-- **Modern Design**: Clean, professional layout with glassmorphism effects
-- **Responsive**: Fully responsive design that works on all devices
-- **Interactive**: Animated components with smooth transitions
-- **Learning Features**: Built-in learning counter for practicing React hooks
+- **Modern Design**: Professional glassmorphism UI with tech-inspired backgrounds
+- **Responsive**: Works perfectly on all devices and screen sizes
 - **Fast Performance**: Built with Next.js 15 for optimal speed
+- **Interactive**: Smooth animations and dynamic content filtering
 - **Type Safety**: Full TypeScript implementation
+- **Real Images**: Authentic tech workspace backgrounds instead of patterns
 
 ## 🛠️ Tech Stack
 
@@ -29,7 +34,9 @@ A modern, responsive portfolio website built with **Next.js 15** and **Tailwind 
 
 ## 🌐 Live Website
 
-**Portfolio is live at: [https://siyaslwf.github.io/portfolio-website/](https://siyaslwf.github.io/portfolio-website/)**
+**Portfolio is live at**: [https://siyaslwf.github.io/portfolio-website/](https://siyaslwf.github.io/portfolio-website/)
+
+
 
 ## 🚀 Quick Start
 
@@ -68,8 +75,8 @@ This portfolio is fully customizable. Key files to modify:
 
 ## 🌐 Deployment
 
-### GitHub Pages (Current)
-This portfolio is automatically deployed to GitHub Pages using GitHub Actions.
+### GitHub Pages
+Automatically deployed to GitHub Pages with every commit to master branch.
 
 **Live URL**: [https://siyaslwf.github.io/portfolio-website/](https://siyaslwf.github.io/portfolio-website/)
 
@@ -86,9 +93,10 @@ Deploy on Vercel:
 
 ## 📧 Contact
 
-**Mohammed Siyas CK**
-- Email: siyasmohammedd@gmail.com
-- GitHub: [@Siyaslwf](https://github.com/Siyaslwf)
+**Mohammed Siyas CK**  
+📧 Email: siyasmohammedd@gmail.com  
+🐙 GitHub: [@Siyaslwf](https://github.com/Siyaslwf)  
+🌐 Portfolio: [https://siyaslwf.github.io/portfolio-website/](https://siyaslwf.github.io/portfolio-website/)
 
 ## 📄 License
 
