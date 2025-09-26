@@ -27,6 +27,10 @@ A modern, responsive portfolio website built with **Next.js 15** and **Tailwind 
 - **Projects**: Filterable project showcase
 - **Contact**: Contact form with social links
 
+## 🌐 Live Website
+
+**Portfolio is live at: [https://siyaslwf.github.io/portfolio-website/](https://siyaslwf.github.io/portfolio-website/)**
+
 ## 🚀 Quick Start
 
 ```bash
@@ -43,7 +47,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the portfolio in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view the portfolio locally.
 
 ## 📝 Available Scripts
 
@@ -64,9 +68,21 @@ This portfolio is fully customizable. Key files to modify:
 
 ## 🌐 Deployment
 
-Deploy easily on Vercel:
+### GitHub Pages (Current)
+This portfolio is automatically deployed to GitHub Pages using GitHub Actions.
 
+**Live URL**: [https://siyaslwf.github.io/portfolio-website/](https://siyaslwf.github.io/portfolio-website/)
+
+### Alternative Deployment Options
+Deploy on Vercel:
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/Siyaslwf/portfolio-website)
+
+### GitHub Pages Setup
+1. Go to your repository settings
+2. Navigate to **Pages** section
+3. Select source: **Deploy from a branch** 
+4. Choose **gh-pages** branch
+5. The site will be live at `https://yourusername.github.io/portfolio-website/`
 
 ## 📧 Contact
 
