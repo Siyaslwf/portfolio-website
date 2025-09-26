@@ -54,8 +54,6 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the portfolio locally.
-
 ## 📝 Available Scripts
 
 - `npm run dev` - Start development server
