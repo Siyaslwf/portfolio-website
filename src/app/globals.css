@@ -13,7 +13,7 @@
   }
   
   body {
-    @apply bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 text-white;
+    @apply bg-gray-900 text-white;
   }
 }
 
@@ -53,34 +53,27 @@
 }
 
 @layer utilities {
-  /* LEARNING: Custom animations and keyframes */
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
-  }
-  
+  /* Professional animations */
   .animate-slide-up {
-    animation: slideInUp 0.6s ease-out;
+    animation: slideInUp 1s ease-out;
   }
-  
+
   .animate-fade-in {
-    animation: fadeIn 0.8s ease-out;
+    animation: fadeIn 1.2s ease-out;
   }
-}
 
-/* LEARNING: CSS Keyframes for custom animations */
-@keyframes float {
-  0%, 100% { 
-    transform: translateY(0px); 
+  .animate-pulse-slow {
+    animation: pulseSlow 4s ease-in-out infinite;
   }
-  50% { 
-    transform: translateY(-20px); 
-  }
-}
 
+  .animate-bounce-slow {
+    animation: bounceSlow 2s ease-in-out infinite;
+  }
+}/* Professional keyframe animations */
 @keyframes slideInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -94,6 +87,26 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }
 

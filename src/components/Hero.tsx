@@ -12,69 +12,69 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* LEARNING: Background gradient with animation */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-indigo-900/20" />
+      {/* Professional subtle background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/40 to-transparent" />
       
-      {/* LEARNING: Animated background particles */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-purple-400 rounded-full animate-bounce" />
-        <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-indigo-400 rounded-full animate-ping" />
+      {/* Minimalistic geometric elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 right-20 w-64 h-64 border border-blue-500/10 rounded-full animate-pulse-slow" />
+        <div className="absolute bottom-20 left-20 w-32 h-32 border border-purple-500/10 rounded-full animate-pulse-slow" style={{animationDelay: '1s'}} />
       </div>
 
       <div className={`container mx-auto px-6 text-center z-10 transition-all duration-1000 ${
         mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}>
-        {/* LEARNING: Animated greeting */}
-        <div className="mb-6">
-          <span className="text-blue-400 text-lg font-medium animate-fade-in">
-            Hello, I'm
+        {/* Professional greeting */}
+        <div className="mb-8">
+          <span className="text-blue-300/80 text-sm font-light tracking-wide uppercase animate-fade-in">
+            Portfolio
           </span>
         </div>
 
-        {/* LEARNING: Main heading with gradient */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text animate-slide-up">
-          MOHAMMED SIYAS CK
+        {/* Professional main heading */}
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 text-white animate-slide-up tracking-tight">
+          Mohammed Siyas CK
         </h1>
 
-        {/* LEARNING: Subtitle with typewriter effect */}
-        <h2 className="text-xl md:text-2xl text-white/80 mb-8 max-w-2xl mx-auto">
-          Full Stack Developer & UI/UX Designer
-          <br />
-          <span className="text-blue-400">Building digital experiences that matter</span>
-        </h2>
+        {/* Professional subtitle */}
+        <div className="mb-12 max-w-3xl mx-auto">
+          <h2 className="text-lg md:text-xl text-gray-300 mb-4 font-light">
+            Full Stack Developer & UI/UX Designer
+          </h2>
+          <p className="text-gray-400 text-base md:text-lg font-light leading-relaxed">
+            Crafting modern web experiences with clean code and thoughtful design
+          </p>
+        </div>
 
-        {/* LEARNING: Action buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        {/* Professional action buttons */}
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
           <a
             href="#projects"
-            className="btn-primary group"
+            className="group px-8 py-3 bg-white text-gray-900 rounded-sm font-medium hover:bg-gray-100 transition-all duration-300 flex items-center"
           >
-            View My Work
-            <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            View Projects
+            <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
           <a
             href="#contact"
-            className="btn-secondary"
+            className="px-8 py-3 border border-gray-500 text-gray-300 rounded-sm font-medium hover:border-white hover:text-white transition-all duration-300"
           >
             Get In Touch
           </a>
-          
-          {/* LEARNING: Interactive counter button to practice useState */}
+
+          {/* Learning counter with minimalist design */}
           <button
             onClick={() => setClickCount(clickCount + 1)}
-            className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-colors"
+            className="px-4 py-2 text-xs text-gray-400 border border-gray-700 rounded-sm hover:text-white hover:border-gray-500 transition-all duration-300"
           >
-            Learning Counter: {clickCount}
+            React Practice: {clickCount}
           </button>
-        </div>
-
-        {/* LEARNING: Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse" />
+        </div>        {/* Minimalist scroll indicator */}
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+          <div className="w-px h-16 bg-gradient-to-b from-gray-500 to-transparent animate-fade-in">
+            <div className="w-2 h-2 bg-gray-500 rounded-full -translate-x-0.5 animate-bounce-slow" />
           </div>
         </div>
       </div>
